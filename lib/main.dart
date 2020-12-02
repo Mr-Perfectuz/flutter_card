@@ -17,12 +17,12 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Container(
-            margin: EdgeInsets.only(left: 30),
+            margin: EdgeInsets.symmetric(vertical: 200.0, horizontal: 150.0),
             padding: EdgeInsets.all(10.0),
             width: 60,
-            height: 80,
-            color: Colors.white,
-            child: Text('Hello'),
+            height: 40,
+            color: Colors.red[100],
+            child: Text('Helo'),
           ),
         ),
       ),
