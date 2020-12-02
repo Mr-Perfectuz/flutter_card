@@ -15,10 +15,10 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Colors.blue,
         body: SafeArea(
             child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Container(
               padding: EdgeInsets.all(30.0),
@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget {
                 style: TextStyle(fontSize: 15.0, color: Colors.deepPurple),
               ),
             ),
+            SizedBox(height: 100.0),
             Container(
               padding: EdgeInsets.all(30.0),
               color: Colors.deepPurple.shade50,
@@ -42,6 +43,7 @@ class MyApp extends StatelessWidget {
                 style: TextStyle(fontSize: 15.0, color: Colors.deepPurple),
               ),
             ),
+            SizedBox(height: 100.0),
             Container(
               padding: EdgeInsets.all(30.0),
               color: Colors.brown,
@@ -53,6 +55,7 @@ class MyApp extends StatelessWidget {
                 style: TextStyle(fontSize: 15.0, color: Colors.deepPurple),
               ),
             ),
+            SizedBox(height: 100.0),
             Container(
               padding: EdgeInsets.all(30.0),
               color: Colors.purpleAccent,
