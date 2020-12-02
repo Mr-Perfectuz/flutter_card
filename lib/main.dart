@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.redAccent,
         body: SafeArea(
           child: Container(
             margin: EdgeInsets.symmetric(vertical: 200.0, horizontal: 150.0),
