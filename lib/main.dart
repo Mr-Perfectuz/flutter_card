@@ -11,46 +11,85 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'My App',
       theme: ThemeData(
+        fontFamily: 'Raleway',
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
         backgroundColor: Colors.teal,
-        body: SafeArea(
-            child: Row(
-          // crossAxisAlignment: CrossAxisAlignment.stretch,
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: <Widget>[
+        body: Column(
+          children: [
             Container(
-              padding: EdgeInsets.all(30.0),
-              color: Colors.red,
-              width: 100.0,
-              height: 750.0,
-              // child: Text(
-              //   'Pohang University',
-              //   textDirection: TextDirection.rtl,
-              //   style: TextStyle(fontSize: 15.0, color: Colors.deepPurple),
-              // ),
+              margin: EdgeInsets.only(top: 200.0),
+              height: 140,
+              alignment: Alignment.topCenter,
+              child: CircleAvatar(
+                backgroundColor: Colors.blue,
+                radius: 100,
+                backgroundImage: NetworkImage(
+                    'https://image.shutterstock.com/image-illustration/illustration-international-passengers-infrared-thermal-600w-1640970700.jpg'),
+              ),
             ),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 30, vertical: 30),
-              width: 100.0,
-              height: 100.0,
-              color: Colors.yellow,
+              margin: EdgeInsets.only(left: 60.0, top: 10.0),
+              height: 50,
+              width: 200,
+              child: Text(
+                'Angela Yu',
+                textDirection: TextDirection.ltr,
+                style: TextStyle(
+                  fontSize: 32,
+                  color: Colors.white,
+                  fontFamily: 'RobotoMono',
+                ),
+              ),
             ),
             Container(
-              padding: EdgeInsets.all(30.0),
-              color: Colors.blue,
-              width: 100.0,
-              height: 750.0,
-              // child: Text(
-              //   'Sogang University',
-              //   textDirection: TextDirection.rtl,
-              //   style: TextStyle(fontSize: 15.0, color: Colors.deepPurple),
-              // ),
+              margin: EdgeInsets.only(left: 25.0),
+              height: 20,
+              width: 200,
+              child: Text(
+                'FLUTER DEVELOPER',
+                textDirection: TextDirection.ltr,
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.white,
+                  fontFamily: 'RobotoMono',
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(left: 30.0),
+              width: 200.0,
+              height: 15.0,
+              child: Text(
+                '--------------------------------',
+                textDirection: TextDirection.ltr,
+                style: TextStyle(fontSize: 20.0, color: Colors.white),
+              ),
+            ),
+            Column(
+              children: [
+                Container(
+                  margin: EdgeInsets.only(top: 10.0),
+                  padding: EdgeInsets.only(top: 5.0),
+                  color: Colors.white,
+                  width: 330,
+                  height: 60,
+                  child: Column(
+                    children: [
+                      Icon(
+                        Icons.call,
+                        color: Colors.teal,
+                        size: 24.0,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
             ),
           ],
-        )),
+        ),
       ),
     );
   }
