@@ -32,58 +32,62 @@ class MyApp extends StatelessWidget {
               'FLUTTER DEVELOPMENT',
               style: TextStyle(fontSize: 20.0, color: Colors.white),
             ),
-            Container(
+            Card(
               margin: EdgeInsets.symmetric(
                 horizontal: 20.0,
                 vertical: 10.0,
               ),
-              padding: EdgeInsets.all(10.0),
               color: Colors.white,
-              child: Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.call,
-                    size: 30.0,
-                    color: Colors.teal,
-                  ),
-                  SizedBox(
-                    width: 30.0,
-                  ),
-                  Text(
-                    '+44 1234 5678 901',
-                    style: TextStyle(
-                      fontSize: 25.0,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.call,
+                      size: 30.0,
                       color: Colors.teal,
                     ),
-                  ),
-                ],
+                    SizedBox(
+                      width: 30.0,
+                    ),
+                    Text(
+                      '+44 1234 5678 901',
+                      style: TextStyle(
+                        fontSize: 25.0,
+                        color: Colors.teal,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
-            Container(
+            Card(
               margin: EdgeInsets.symmetric(
                 horizontal: 20.0,
                 vertical: 10.0,
               ),
-              padding: EdgeInsets.all(10.0),
               color: Colors.white,
-              child: Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.email,
-                    size: 30.0,
-                    color: Colors.teal,
-                  ),
-                  SizedBox(
-                    width: 30.0,
-                  ),
-                  Text(
-                    'angela@gmail.com',
-                    style: TextStyle(
-                      fontSize: 25.0,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.email,
+                      size: 30.0,
                       color: Colors.teal,
                     ),
-                  ),
-                ],
+                    SizedBox(
+                      width: 30.0,
+                    ),
+                    Text(
+                      'angela@gmail.com',
+                      style: TextStyle(
+                        fontSize: 25.0,
+                        color: Colors.teal,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ],
