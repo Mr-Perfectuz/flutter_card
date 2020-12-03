@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             CircleAvatar(
               backgroundColor: Colors.blue,
@@ -32,12 +33,18 @@ class MyApp extends StatelessWidget {
               'FLUTTER DEVELOPMENT',
               style: TextStyle(fontSize: 20.0, color: Colors.white),
             ),
+            SizedBox(
+              height: 20.0,
+              width: 200.0,
+              child: Divider(
+                color: Colors.white,
+              ),
+            ),
             Card(
               margin: EdgeInsets.symmetric(
                 horizontal: 20.0,
                 vertical: 10.0,
               ),
-              color: Colors.white,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: ListTile(
@@ -62,7 +69,6 @@ class MyApp extends StatelessWidget {
                 horizontal: 20.0,
                 vertical: 10.0,
               ),
-              color: Colors.white,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: ListTile(
