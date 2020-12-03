@@ -40,24 +40,20 @@ class MyApp extends StatelessWidget {
               color: Colors.white,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.call,
-                      size: 30.0,
+                child: ListTile(
+                  onTap: () {},
+                  leading: Icon(
+                    Icons.call,
+                    size: 30.0,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+44 1234 5678 901',
+                    style: TextStyle(
+                      fontSize: 25.0,
                       color: Colors.teal,
                     ),
-                    SizedBox(
-                      width: 30.0,
-                    ),
-                    Text(
-                      '+44 1234 5678 901',
-                      style: TextStyle(
-                        fontSize: 25.0,
-                        color: Colors.teal,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ),
@@ -69,24 +65,20 @@ class MyApp extends StatelessWidget {
               color: Colors.white,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
-                      size: 30.0,
+                child: ListTile(
+                  onTap: () {},
+                  leading: Icon(
+                    Icons.email,
+                    size: 30.0,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'angela@gmail.com',
+                    style: TextStyle(
+                      fontSize: 25.0,
                       color: Colors.teal,
                     ),
-                    SizedBox(
-                      width: 30.0,
-                    ),
-                    Text(
-                      'angela@gmail.com',
-                      style: TextStyle(
-                        fontSize: 25.0,
-                        color: Colors.teal,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ),
