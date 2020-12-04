@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
               radius: 50.0,
             ),
             Text(
-              'Angela Yeu',
+              'Mr James.',
               style: TextStyle(
                   fontFamily: 'Pacifico',
                   fontSize: 30.0,
